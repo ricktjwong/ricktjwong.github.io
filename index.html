@@ -15,21 +15,52 @@
 </head>
 
 <body> 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+    <div id="about">
         <div class="container">
             <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">Rick Wong</h2>
+                    <p>Imperial College London</p>
+                    <p>MSci Physics</p>
+                    <p>Year 3</p>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Physics and computing are my interests and thankfully, they augment
+                        each other well. I've made use of numerical methods to simulate
+                        heat dissipation, detect galaxies in the vast sky, model the trajectories
+                        of particles to find out
+                        the conditions required for the Aurora Borealis to occur, and utilised
+                        image recognition and particle tracking to conduct Millikan's oil drop
+                        experiment which discovered that charge is quantised.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Computing Projects</h2>
+        <div class="container">
+            <div class="row">
+
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/qlearning.gif" style="height: 300px"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Reinforcement Learning on the PIC18</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            Built a grid game with an oscilloscope display using the PIC18F87K22 microprocessor.
+                            The aim of the game is to get from one grid to the goal, accumulating the highest
+                            number of points possible. Reinforcement learning was implemented to allow to character
+                            to optimise and find the best path possible. The PIC18 is an 8-bit microprocessor with
+                            a clock speed of 16 MHz, hence special care had to be taken to implement 16-bit arithmetic
+                            for the reinforcement learning.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/ricktjwong/grid-X" target="_blank">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -37,19 +68,106 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/pde.png" style="height: 300px"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Heat Sink Optimisation</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            Used finite difference methods to solve the heat diffusion partial differential equation
+                            to model a system with a microprocessor with a heat sink. The widths and heights of the heat
+                            sink were optimised to achieve an optimal configuration for heat loss. Convection cooling was
+                            added to the model to achieve sufficient cooling of the microprocessor to suitable working
+                            temperatures.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/ricktjwong/pde-solver" target="_blank">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/astro.png" style="height: 300px"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Astronomical Image Processing</h3>
+                        <p>
+                            Analysed astronomical data from the SWIRE dataset to conduct
+                            a galaxy survey on the number of counts of galaxies. The detected
+                            galactic objects were profiled using the Sersic profile for galaxies
+                            and a Moffat point source function (PSF) for stars.
+                        </p>
+                        <a href="https://github.com/ricktjwong/astronomical-image-processing" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/millikan.png" style="height: 300px"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Millikan's Oil Drop Experiment</h3>
+                        <p>
+                            This traditionally entails sitting in front of a microscope
+                            and recording the movement of oil droplets under the application
+                            of an electric field to calculate the velocities and thus deducing
+                            the charge on each droplet. Instead, I decided to record videos of
+                            the moving oil drops under the electric field and utilised image
+                            recognition and particle tracking to automate the process of data
+                            collection. This allowed the collection of a larger
+                            data set which enabled the analysis of small systematic errors.
+                        </p>
+                        <a href="https://github.com/ricktjwong/millikan" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/lens.png" style="height: 300px"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Investigating Aberration in Lenses</h3>
+                        <p>
+                            Built a framework for the simulation of optical rays through lenses.
+                            Optimisation was also done using scipy's optimise framework to find
+                            the best curvature which minimised spot radius. Worked on an independent
+                            extension on correcting chromatic aberration using combinations of
+                            lenses.
+                        </p>
+                        <a href="https://github.com/ricktjwong/ray-tracer" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project --> 
+                
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/northern.png" style="height: 300px"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Charged Particles in the Magnetosphere</h3>
+                        <p>
+                            Simulation of charged particles in the Earth’s
+                            magnetic field using Python, tracking their trajectory
+                            and investigating the conditions required for the
+                            Northern/Southern lights to occur, which happens when the
+                            energetic particles enter the Earth’s atmosphere.
+                        </p>
+                        <a href="https://github.com/ricktjwong/particle-tracing-magnetosphere" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project --> 
+
             </div>
         </div>
     </div>
@@ -58,32 +176,13 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>JavaScript</li>
             <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
             <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+            <li>Assembly</li>
+            <li>HTML</li>
+            <li>CSS</li>
             <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
             <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -107,7 +206,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2017 YOUR NAME
+                        2019 RICK WONG
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -118,22 +217,13 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/ricktjwong" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/rick-wong-45725764/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/rickwtj" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
