@@ -66,17 +66,17 @@ header li {
 }
 header a {
     display: block;
-    color: #3498db;
+    color: #028AF4;
     padding: 10px;
 }
 header a:hover {
-    color: #217dbb;
+    color: #028AF4;
     text-decoration: none;
     background: #eee;
     border-radius: 4px;
 }
 header a:focus {
-    color: #3498db;
+    color: #028AF4;
     text-decoration: none;
 }
 header.active {
@@ -95,7 +95,7 @@ header.sticky {
     position: fixed;
     right: 15px;
     top: 10px;
-    color: #3498db;
+    color: #028AF4;
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
@@ -128,7 +128,7 @@ footer {
 }
 .copyright p {
     margin: 0;
-    color: #74808a;
+    color: #028AF4;
 }
 .top {
     text-align: center;
@@ -160,11 +160,11 @@ footer {
 }
 .social a {
     display: block;
-    color: #74808a;
+    color: #028AF4;
     padding: 10px;
 }
 .social a:hover {
-    color: #3498db;
+    color: #028AF4;
 }
 .btn-rounded-white {
     display: inline-block;
@@ -175,7 +175,7 @@ footer {
     transition: .5s ease all;
 }
 .btn-rounded-white:hover {
-    color: #3498db;
+    color: #028AF4;
     background: #fff;
     text-decoration: none;
 }
@@ -197,11 +197,11 @@ footer {
     content: '';
     top: 100%;
     height: 1px;
-    width: 100px;
+    width: 50px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #3498db;
+    background: #028AF4;
 }
 .background-alt {
     background: #f2f2f5;
@@ -249,7 +249,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
+    background: #028AF4;
     z-index: 1;
 }
 #lead-down {
@@ -320,7 +320,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #3498db;
+    background: #028AF4;
     z-index: 0;
 }
 #experience-timeline:after {
@@ -328,8 +328,8 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #3498db;
-    background: linear-gradient(to bottom,  #3498db,  rgba(52, 152, 219, 0));
+    background: #028AF4;
+    background: linear-gradient(to bottom,  #028AF4,  rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px;
 }
@@ -370,7 +370,7 @@ footer {
     color: #fff;
     width: 50px;
     height: 50px;
-    background: #3498db;
+    background: #028AF4;
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -457,6 +457,9 @@ footer {
     margin-left: 300px;
     padding: 15px;
 }
+.project-info a {
+    color: #028AF4;
+}
 .project-info h3 {
     font-size: 1.5em;
     font-weight: 300;
@@ -503,7 +506,7 @@ footer {
 }
 #contact {
     padding: 50px 15px;
-    background: #3498db;
+    background: #028AF4;
     text-align: center;
 }
 #contact h2 {
@@ -555,7 +558,7 @@ footer {
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
-    color: #3498db;
+    color: #028AF4;
     font-weight: 700;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: .5s ease all;
